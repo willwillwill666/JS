@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html lang="zh">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>福利页面</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            display: flex;  
+            flex-direction: column;  
+            align-items: center;  
+            justify-content: center;  
+            height: 100vh;  
+            background-color: #f0f0f0;  
+            text-align: center;  
+        }  
+        button {  
+            padding: 10px 20px;  
+            font-size: 16px;  
+            cursor: pointer;  
+            margin-top: 20px;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div id="home">  
+        <h1>想看十八禁的内容吗？</h1>  
+        <button onclick="showContent()">点击下方按钮，即可领取福利</button>  
+    </div>  
+    <div id="content" style="display: none;">  
+        <h1>色即是空 空即是色</h1>  
+    </div>  
+
+    <script>  
+        function showContent() {  
+            document.getElementById("home").style.display = "none";  
+            document.getElementById("content").style.display = "block";  
+        }  
+    </script>  
+</body>  
+</html>  
